@@ -104,5 +104,7 @@ if uploaded_files:
                 file_name=file_name,
                 mime=mime_type
             )
+            if succ != '':
+                st.success(f"📁 File has been converted to !{file.name}")
 
-st.success("🎉 All Files Processed!")
+# st.success("🎉 All Files Processed!")
